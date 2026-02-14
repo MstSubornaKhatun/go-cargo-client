@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const Login = () => {
-    const {register, handleSubmit } = useForm();
+    const {register, handleSubmit, formState: {errors} } = useForm();
 
     const onSubmit = (data) => {
         console.log(data) // {email: '33suborna@gmail.com', password: 'asdfg'}
@@ -25,6 +25,16 @@ const Login = () => {
             {/* password */}
           <label className="label">Password</label>
           <input type="password" {...register('password', {required: true, minLength: 6})} className="input" placeholder="Password" />
+
+            {errors.password?.type === "required" && (
+        <p className='text-red-500'>Password is required</p>
+      )}
+      {
+        errors.password?.type==='minLength' && (
+            <p className='text-red-500'>Password must be 6 characters or longer</p>
+        )
+      }
+
 
 
           <div><a className="link link-hover">Forgot password?</a></div>
