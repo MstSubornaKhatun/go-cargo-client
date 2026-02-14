@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "gocargo";
+  default: true;
+
+  --color-primary: #77096C;
+  --color-secondary: #EAD7F8;
+  --color-accent: #A855F7;
+
+  --color-base-100: #F5F5F5;
+  --color-base-content: #111111;
+}
