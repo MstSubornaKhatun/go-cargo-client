@@ -4,6 +4,9 @@ import HowItWorks from '../HowItWorks/HowItWorks';
 import OurServices from '../OurServices/OurServices';
 import CompanyLogos from '../CompanyLogos/CompanyLogos';
 import FeatureHighlights from '../FeatureHighlights/FeatureHighlights';
+import BeMerchant from '../BeMerchant/BeMerchant';
+import Testimonials from '../Testimonials/Testimonials';
+import FAQ from '../FAQ/FAQ';
 
 const Home = () => {
     return (
@@ -13,6 +16,9 @@ const Home = () => {
             <OurServices/>
             <CompanyLogos/>
             <FeatureHighlights/>
+            <BeMerchant/>
+            <Testimonials/>
+            <FAQ/>
         </div>
     );
 };
