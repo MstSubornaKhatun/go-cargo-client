@@ -1,3 +1,6 @@
+/* Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -11,4 +14,12 @@
 
   --color-base-100: #F5F5F5;
   --color-base-content: #111111;
+}
+
+/* Google Font Urbanist */
+.font-urbanist {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
