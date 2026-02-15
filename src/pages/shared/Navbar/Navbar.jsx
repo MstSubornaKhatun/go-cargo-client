@@ -16,7 +16,7 @@ const Navbar = () => {
       </li>
 
       <li>
-        <NavLink to="/coverage"
+        <NavLink to="/-"
           className={({ isActive }) =>
             isActive ? "text-primary font-semibold" : "hover:text-primary"
           }>

@@ -4,6 +4,8 @@ import Home from "../pages/UI/Home/Home";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Authentication/Login/Login";
 import Register from "../pages/Authentication/Register/Register";
+import Coverage from "../pages/Coverage/Coverage";
+import AddParcel from "../pages/AddParcel/AddParcel";
 
  const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ import Register from "../pages/Authentication/Register/Register";
             index: true,
             Component: Home
         },
+        {
+          path: "coverage",
+          Component: Coverage
+        },
+        {
+          path: "",
+          Component: AddParcel
+        }
     ]
   },
   {
